@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr" ng-app="thermometre">
+  	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Web temperature page">
+		<meta name="author" content="Lenny Louis">
+		<!--<meta http-equiv="refresh" content="5" >-->
+		<link rel="icon" href="">
+
+		<title>Capteur de température</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="./css/style.css" rel="stylesheet">
+	</head>
+
+  <body ng-controller="ChaleurController">
+    <div class="container">
+		<h1 class="text-left" style="float:left;">{{date | date : "EEEE d MMMM y" | uppercase}}</h1>
+		<h1 class="text-right">{{date | date : "HH:mm:ss"}}</h1>
+
+		<hr>
+		
+		<!--<h3>Five grid tiers</h3>
+      	<p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>-->
+		
+		<!--<br>
+		
+		<div class="row">
+        <div class="col-md-4 col-centered temp-box" ng-class="{temp.is-connected: temp-item_error" ng-repeat="temp in temperature">
+			<div class="temp-item">
+				<h1 class="text-center">{{temp.piece}}</h1>
+				<div class="progress-wrapper"  ng-style="{'font-size': getFontSize()}">
+						<div class="progress">
+							<h1 class="text-center">{{temp.temperature}}°</h1>
+						</div>
+						<div
+							round-progress
+							max="40"
+							current="temp.temperature"
+							color="#45ccce"
+							bgcolor="#eaeaea"
+							radius="80"
+							stroke="15"
+							semi="false"
+							rounded="true"
+							clockwise="false"
+							responsive="false"
+							duration="0"
+							animation="easeInOutQuart"
+							animation-delay="0"
+							offset="0"></div>
+				</div>
+			</div>
+      </div> -->
+		<div class="row">
+		<div class="col-md-4 col-centered temp-box" ng-class="{temp.is-connected: temp-item_error" ng-repeat="temp in temperature">
+			<div class="temp-item">
+				<h1 class="text-center">{{temp.piece}}</h1>
+				<div class="progress-wrapper"  ng-style="{'font-size': getFontSize()}">
+						<div class="progress">
+							<h1 class="text-center">{{temp.temperature}}°</h1>
+						</div>
+						<div
+							round-progress
+							max="40"
+							current="temp.temperature"
+							color="#45ccce"
+							bgcolor="#eaeaea"
+							radius="80"
+							stroke="15"
+							semi="false"
+							rounded="true"
+							clockwise="false"
+							responsive="false"
+							duration="0"
+							animation="easeInOutQuart"
+							animation-delay="0"
+							offset="0"></div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+		
+		
+  </body>
+  <script src="./js/angular.min.js"></script>
+  <script src="./js/roundProgress.min.js"></script>
+  <script src="./js/angular-locale_fr-fr.js"></script>
+  <script src="./js/app.js"></script>
+</html>

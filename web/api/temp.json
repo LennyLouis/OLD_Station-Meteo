@@ -1,0 +1,30 @@
+[
+	{
+		"piece": "Salon",
+		"temperature": "21"
+	}, 
+	{
+		"piece": "Chambre Lenny",
+		"temperature": "23"
+	}, 
+	{
+		"piece": "Chambre Sarah",
+		"temperature": "20"
+	}, 
+	{
+		"piece": "Salle de bain",
+		"temperature": "22"
+	}, 
+	{
+		"piece": "Cuisine",
+		"temperature": "19"
+	}, 
+	{
+		"piece": "Garage",
+		"temperature": "12"
+	},
+	{
+		"piece": "Couloir",
+		"temperature": "18"
+	}
+]

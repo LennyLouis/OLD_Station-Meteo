@@ -1,0 +1,65 @@
+body {
+  	padding-top: 2rem;
+  	padding-bottom: 2rem;
+  	background-color: #f5f6fa;
+	color: #2f3640;
+}
+
+h3 {
+  	margin-top: 2rem;
+}
+
+.row {
+  	margin-bottom: 1rem;
+}
+.row .row {
+  	margin-top: 1rem;
+  	margin-bottom: 0;
+}
+
+hr {
+  	margin-top: 2rem;
+  	margin-bottom: 2rem;
+}
+
+.temp-box {
+	padding-bottom: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.temp-item {
+	border: solid 1px transparent;
+	border-radius: 25px;
+	background-color: #f1f2f6;
+	padding-bottom: 15px;
+	border-color: transparent;
+}
+
+.temp-item_error {
+	border-color: #ff3f34;
+	animation-duration: 4s;
+}
+
+.progress-wrapper {
+    position: relative;
+	text-align: center!important;
+}
+
+.progress-wrapper .progress {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+	background-color: transparent;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+    width: auto;
+	height: auto;
+    z-index: 1;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
